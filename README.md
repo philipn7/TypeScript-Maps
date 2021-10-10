@@ -17,5 +17,9 @@ faker.js is an API used to randomly generate a multitude of user data.
 - There is a global variable called 'google' but we can't access it until we give typescript its definition. `npm install @types/google.maps`
 - The first line in index.ts should have this directive: `/// <reference types="@types/google.maps" />`
 
+## Hiding Functionality
+Now that we have the 'google' object, another person working on this project can call any google map method. This can break our app so how do we hide these extra methods?
+
+Create a custom map object with only the things we need exposed. Google map object is set to private. Access / modifier methods created as needed.
 
 

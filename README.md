@@ -4,7 +4,7 @@ Map application that generates random users and company locations to be displaye
 ## Parcel-bundle
 This app uses parcel to compile ts into html. Browsers don't run typescript so parcel is an easy way to bridge that gap.
 
-`parcel index.html` will parse the ts file into JavaScript and inject the new js script into index.html
+`parcel index.html` will parse the TypeScript file into JavaScript and inject it script into index.html
 
 ## Generate Fake User Data
 faker.js is an API used to randomly generate a multitude of user data.
@@ -21,5 +21,4 @@ faker.js is an API used to randomly generate a multitude of user data.
 Now that we have the 'google' object, another person working on this project can call any google map method. This can break our app so how do we hide these extra methods?
 
 Create a custom map object with only the things we need exposed. Google map object is set to private. Access / modifier methods created as needed.
-
 

@@ -22,3 +22,5 @@ Now that we have the 'google' object, another person working on this project can
 
 Create a custom map object with only the things we need exposed. Google map object is set to private. Access / modifier methods created as needed.
 
+## Interfaces in Patterns
+Interfaces definitions are a large part of TypeScript. If a method needs to receive an object type to work correctly we define that type with interfaces. The object we pass can also `implements` the interface so typescript and other developers know our intentions.
